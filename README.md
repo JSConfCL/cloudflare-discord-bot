@@ -1,3 +1,25 @@
+# JSCLBOT
+
+Forkeado desde https://github.com/discord/cloudflare-sample-app
+
+# TODO:
+
+- [ ] Documentar comandos
+- [ ] Agregar comando para ver cuanto $ tiene la comunidad
+- [ ] Agregar webhook para interacción con Github
+  - [ ] Que postee cuando salga un PR nuevo
+  - [ ] Q postee cuando se mergee un PR
+  - [ ] Q postee cuando se haga un issue nuevo
+  - [ ] Q postee cuando se haga un comentario nuevo en las discusiones https://github.com/orgs/JSConfCL/discussions
+- [ ] Agregar webhook para interacción con cloudflare workers
+  - [ ] Que postee cuando se deploye algo nuevo
+- [ ] Tener un sistema de karma (@user++)
+- [ ] Mover a typescript
+- [ ] Agregar logging
+- [ ] Mover a hono? (https://hono.dev/)
+
+---
+
 # Cloudflare worker example app
 
 awwbot is an example app that brings the cuteness of `r/aww` straight to your Discord server, hosted on Cloudflare workers. Cloudflare Workers are a convenient way to host Discord bots due to the free tier, simple development model, and automatically managed environment (no VMs!).
