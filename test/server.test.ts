@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { describe, it, beforeEach, afterEach } from 'mocha';
+import { describe, it, beforeEach, afterEach } from 'vitest';
 import {
   InteractionResponseType,
   InteractionType,
@@ -7,7 +7,7 @@ import {
 } from 'discord-interactions';
 import { AWW_COMMAND, INVITE_COMMAND } from '../src/commands.js';
 import sinon from 'sinon';
-import server from '../src/server.js';
+import server from '../src/server.ts';
 
 describe('Server', () => {
   describe('GET /', () => {
