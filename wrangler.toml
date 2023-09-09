@@ -1,6 +1,6 @@
 name = "jsclbot"
-main = "./src/server.js"
-compatibility_date="2023-05-18"
+main = "./src/server.ts"
+compatibility_date="2023-07-01"
 
 # [secrets]
 # DISCORD_TOKEN

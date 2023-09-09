@@ -1,6 +1,12 @@
 {
-  "extends": ["prettier", "eslint:recommended"],
-  "plugins": ["prettier"],
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "@typescript-eslint"],
+  "root": true,
   "rules": {
     "prettier/prettier": ["error"]
   },
@@ -11,7 +17,5 @@
     "sourceType": "module",
     "ecmaVersion": "latest"
   },
-  "ignorePatterns": [
-    "node_modules"
-  ]
+  "ignorePatterns": ["node_modules"]
 }

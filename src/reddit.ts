@@ -10,7 +10,26 @@ export async function getCuteUrl() {
       'User-Agent': 'justinbeckwith:awwbot:v1.0.0 (by /u/justinblat)',
     },
   });
-  const data = await response.json();
+  const data = await response.json<{
+    data: {
+      children: {
+        is_gallery: boolean;
+        data?: {
+          media?: {
+            reddit_video?: {
+              fallback_url: string;
+            };
+          };
+          secure_media?: {
+            reddit_video?: {
+              fallback_url: string;
+            };
+          };
+          url: string;
+        };
+      }[];
+    };
+  }>();
   const posts = data.data.children
     .map((post) => {
       if (post.is_gallery) {
